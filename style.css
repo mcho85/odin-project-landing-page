@@ -3,14 +3,17 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    
 }
     
 
-.header, .container, .footer {
+.header, .section1, .footer {
     background-color: #1f2937;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -46,6 +49,7 @@ ul {
 .section1 {
     display: flex;
     padding: 1em 5em;
+    padding-bottom: 150px;
     justify-content: center;
     align-items: center;    
     flex: 1;
@@ -70,6 +74,8 @@ ul {
 }
 
 .button {
+    color: #f9faf8;
+    font-weight: bolder;
     border: none;
     border-radius: 8px;
     background: #3882f6;
@@ -80,9 +86,79 @@ ul {
 .image {
     height: 200px;
     width: 400px;
-    margin-left: 20px;
+    margin-left: 50px;
     display: flex;  
     background-color: lightslategrey;
     justify-content: center;
     align-items: center;
+}
+
+.section2, .section3, .section4 {
+    padding: 1em 5em;
+    padding-bottom: 100px;
+    
+    
+        
+}
+
+.title2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.text-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.text-box {
+    width: 125px;
+    justify-content: center;
+    align-content: center;
+    align-content: center;
+}
+
+.graytext {
+    color: darkgrey;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.box { 
+    width: 125px;
+    height: 125px;
+    border: 5px #3882f6;
+    border-style: solid;
+    border-radius: 16px;
+}
+
+.section3 {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    padding: 20px;
+}
+
+.signature {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: end;
+}
+
+.section4 {
+    
+
 }
