@@ -3,9 +3,13 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    text-align: center;
     
 }
-    
+
+main {
+    display: flex;
+}
 
 .header, .section1, .footer {
     background-color: #1f2937;
@@ -22,6 +26,8 @@ body {
     height: 80px;
     padding:1em 5em;
     align-items: center;
+    
+
 }
 
 .header-logo {
@@ -48,11 +54,10 @@ ul {
 
 .section1 {
     display: flex;
-    padding: 1em 5em;
-    padding-bottom: 150px;
+    padding: 90px;
     justify-content: center;
     align-items: center;    
-    flex: 1;
+    
 }
 
 .intro-left {
@@ -60,6 +65,8 @@ ul {
     flex-direction: column;
     gap: 1em;
     flex: 1;
+    text-align: left;
+    max-width: 500px;
 }
 
 .title1 {
@@ -93,13 +100,12 @@ ul {
     align-items: center;
 }
 
-.section2, .section3, .section4 {
+.section2, .section3, .s4container {
     padding: 1em 5em;
-    padding-bottom: 100px;
-    
-    
-        
+    padding-bottom: 100px;        
 }
+
+
 
 .title2 {
     font-size: 36px;
@@ -107,21 +113,24 @@ ul {
     color: #1f2937;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .text-image {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+    flex:1 ;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .text-box {
+    display: flex;
+    flex-direction: column;
     width: 125px;
     justify-content: center;
     align-content: center;
-    align-content: center;
+    padding-left: 5em;
 }
 
 .graytext {
@@ -141,8 +150,20 @@ ul {
 }
 
 .section3 {
+    display: flex;
+    flex-direction: column;
     background-color: #e5e7eb;
     color: #1f2937;
+    padding-top: 5em;
+}
+
+.quotebox{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 350px;
+    padding-right: 350px;
+    justify-content: center;
 }
 
 .quote {
@@ -158,7 +179,53 @@ ul {
     text-align: end;
 }
 
-.section4 {
-    
+.s4container {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
 
+.section4 {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 10px;
+    
+}
+
+.actionleft {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 1em;
+}
+
+.actionright {
+    align-items: center;
+    
+}
+
+.title4 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button2 {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    color: #f9faf8;
+    font-weight: bolder;
+    border-radius: 8px;
+    background: #3882f6;
+    padding: 10px;
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 40;
 }
